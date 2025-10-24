@@ -20,15 +20,15 @@ import { Phone } from "lucide-react";
 import "./style.css";
 
 function Home() {
-    const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     alert("Message sent successfully!");
-    }
+  };
   return (
     <div className="page">
       <header>
         <nav className="nav">
-          <a className="brand" href="#">
+          <a className="brand" href="#home" >
             <strong>SaulDesign</strong>
           </a>
           <ul className="nav-list">
@@ -64,6 +64,7 @@ function Home() {
           <img src={image} alt="Imagem página home" />
         </div>
       </section>
+
       <section id="about" className="About">
         <div className="text">
           <img src={iconMusic} alt="icon de música" className="icon-music" />
@@ -110,15 +111,13 @@ function Home() {
         </div>
         <div className="background-work1">
           <img src={work1} className="imgB" alt="Primeiro projeto" />
-          </div>
-         <div className="background-work2">
-           <img src={work2} className="imgC" alt="Segundo projeto" />
-         </div>
-          <div className="background-work3">
-              <img src={work3} className="imgD" alt="Terceiro projeto" />
-          </div>
-       
-      
+        </div>
+        <div className="background-work2">
+          <img src={work2} className="imgC" alt="Segundo projeto" />
+        </div>
+        <div className="background-work3">
+          <img src={work3} className="imgD" alt="Terceiro projeto" />
+        </div>
       </section>
 
       <section id="contact" className="contact-section">
@@ -130,33 +129,33 @@ function Home() {
           <img src={seta3} alt="seta icon" className="icon-seta3" />
           <img src={image3} className="image3" alt="Imagem página contato" />
         </div>
-        <form className="form"  onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <div className="nameEmail">
             <div className="name">
-          <label htmlFor="name">
-            <strong>Your name</strong>
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Name"
-            required
-          />
+              <label htmlFor="name">
+                <strong>Your name</strong>
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div className="email">
+              <label htmlFor="email">
+                <strong>Your email</strong>
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
           </div>
-          <div className="email">
-          <label htmlFor="email">
-            <strong>Your email</strong>
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            required
-          />
-          </div>
-        </div>
           <label htmlFor="message">
             <strong className="message">Your Message</strong>
           </label>
@@ -176,31 +175,36 @@ function Home() {
       </section>
 
       <footer>
-           <div className="roots">
-           <a href="#home"><House className="house-icon"/> Home</a>
-           <a href="#about"><User className="user-icon"/> About me</a>
-           <a href="#contact"><Phone className="phone-icon"/> Contact</a>
+        <div className="roots">
+          <a href="#home">
+            <House className="house-icon" /> Home
+          </a>
+          <a href="#about">
+            <User className="user-icon" /> About me
+          </a>
+          <a href="#contact">
+            <Phone className="phone-icon" /> Contact
+          </a>
         </div>
         <div class="social">
-          <a href="https://facebook.com/" target="_blank">
+          <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
             <img src={facebook} className="icon-facebook" alt="Icon Facebook" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <img
               src={instagram}
               className="icon-instagram"
               alt="Icon Instagrem"
             />
           </a>
-          <a href="https://x.com/" target="_blank">
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
             <img src={twitter} className="icon-twitter" alt="Icon Twitter" />
           </a>
-          <a href="https://www.youtube.com/" target="_blank">
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
             <img src={youtube} className="icon-youtube" alt="Icon Youtube" />
           </a>
         </div>
         <p>Terms of Service - Privacy Policy</p>
-        
       </footer>
     </div>
   );
