@@ -15,7 +15,7 @@ O objetivo principal foi **praticar a conversão de designs para a web usando Re
 - **Figma** – Fonte do design original do projeto.
   
 
-> ⚠️ Projeto criado para estudo e prática. Futuras atualizações estão planejadas para melhorar a responsividade e aprimorar o design.
+> ⚠️ Projeto criado para estudo e prática. Planjo melhorar a responsividade e aprimorar o design.
 
 ---
 
@@ -25,7 +25,7 @@ O objetivo principal foi **praticar a conversão de designs para a web usando Re
   
 - Componentes React simples para seções como Header, Hero, About e Footer.
   
-- **Observação:** Responsividade ainda está em desenvolvimento.
+- **Observação:** Responsividade e outras funcionalidades em desenvolvimento.
 
 ---
 
